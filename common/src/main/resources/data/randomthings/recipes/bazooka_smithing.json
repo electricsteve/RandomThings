@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "minecraft:tnt"
+  },
+  "base": {
+    "item": "minecraft:crossbow"
+  },
+  "addition": [],
+  "result": {
+    "item": "randomthings:bazooka"
+  }
+}

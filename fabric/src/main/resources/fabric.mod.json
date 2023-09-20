@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "randomthings",
+  "version": "${version}",
+
+  "name": "Random Things",
+  "description": "Random things my friends wanted.",
+  "authors": ["ElectricSteve & friends"],
+  "contact": {
+    "issues": "https://github.com/electricsteve/RandomThings/issues",
+    "sources": "https://github.com/electricsteve/RandomThings"
+  },
+
+  "license": "MIT",
+  "icon": "icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "electricsteve.randomthings.fabric.RandomThingsFabric"
+    ]
+  },
+  "mixins": [
+    "randomthings.mixins.json",
+    "randomthings-common.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.22",
+    "minecraft": ">=1.20.1"
+  }
+}
