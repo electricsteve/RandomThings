@@ -20,7 +20,7 @@ public class Bazooka extends Item {
         Vec3d Velocity = user.getRotationVec(1.0F);
         double y = user.getEyeY() - 0.5;
         if (world instanceof ServerWorld) {
-            FireballEntity FireBall = new  FireballEntity(world, user, Velocity.getX(), Velocity.getY(), Velocity.getZ(), 50);
+            FireballEntity FireBall = new  FireballEntity(world, user, Velocity.getX(), Velocity.getY(), Velocity.getZ(), 10);
             FireBall.teleport(user.getX(), y, user.getZ());
             world.spawnEntity(FireBall);
         }
